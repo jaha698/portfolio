@@ -5,8 +5,107 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Jahid Djeffal Portfolio BTS SIO SISR</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root{--bg:#06040f;--bg2:#0e0b1a;--bg3:#131020;--glass:rgba(14,11,26,.7);--vp:#9333ea;--vl:#c084fc;--vd:#6d28d9;--v2:#7c3aed;--vg:rgba(147,51,234,.12);--vg2:rgba(147,51,234,.25);--tm:#f0e8ff;--tmuted:#a78bca;--tdim:#6b5a8a;--border:rgba(147,51,234,.2);--borderh:rgba(147,51,234,.5);--mono:'Courier New',monospace;--grad:linear-gradient(135deg,#7c3aed,#a855f7,#c084fc);--gradh:linear-gradient(135deg,#6d28d9,#9333ea,#a855f7)}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body:before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 60% 40% at -5% 0%,rgba(109,40,217,.55) 0%,transparent 50%),radial-gradient(ellipse 50% 35% at 105% 0%,rgba(124,58,237,.4) 0%,transparent 48%),radial-gradient(ellipse 55% 40% at 105% 100%,rgba(168,85,247,.45) 0%,transparent 50%),radial-gradient(ellipse 60% 35% at -5% 100%,rgba(76,29,149,.5) 0%,transparent 48%),radial-gradient(ellipse 30% 30% at 50% 50%,rgba(147,51,234,.08) 0%,transparent 60%);animation:cosmicShift 20s ease-in-out infinite alternate}@keyframes cosmicShift{0%{opacity:.85;filter:hue-rotate(0deg) blur(0px)}50%{opacity:1;filter:hue-rotate(15deg) blur(1px)}100%{opacity:.9;filter:hue-rotate(-10deg) blur(0px)}}main,nav,footer{position:relative;z-index:1}body{background:var(--bg);color:var(--tm);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.7;overflow-x:hidden}::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--vd);border-radius:10px}
+nav{background:rgba(6,4,15,.8);border-bottom:1px solid var(--border);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:62px;position:sticky;top:0;z-index:200;backdrop-filter:blur(20px)}nav ul{list-style:none;display:flex;gap:2rem}nav a{color:var(--tmuted);text-decoration:none;font-size:.85rem;transition:color .2s}nav a:hover{color:var(--vl)}main{max-width:1020px;margin:0 auto;padding:0 1.5rem 6rem}section{padding-top:6rem}h1{font-size:3rem;font-weight:900;margin-bottom:1rem}h2{font-size:2rem;margin-bottom:2rem}.glass{background:var(--glass);border:1px solid var(--border);border-radius:16px;backdrop-filter:blur(12px);padding:2rem}.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.6rem;background:var(--grad);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;border:none;cursor:pointer;transition:transform .2s}.btn:hover{transform:translateY(-2px)}footer{background:rgba(6,4,15,.95);border-top:1px solid var(--border);padding:2rem 3rem;text-align:center;color:var(--tdim)}
+</style>
 </head>
 <body>
-<p>Loading...</p>
+<nav>
+<a href="#home" style="font-family:var(--mono);font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">JD.portfolio</a>
+<ul>
+<li><a href="#about">À propos</a></li>
+<li><a href="#skills">Compétences</a></li>
+<li><a href="#experience">Expérience</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<main>
+<section id="home" style="min-height:90vh;display:flex;flex-direction:column;justify-content:center">
+<div style="margin-bottom:2rem;font-size:.78rem;color:var(--vl);border:1px solid var(--border);padding:.35rem 1rem;border-radius:30px;display:inline-flex;width:fit-content">🎓 BTS SIO SISR • Administrateur Systèmes & Réseaux</div>
+<h1><span style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Djeffal</span><br><span style="color:#fff">Jahid</span></h1>
+<p style="font-size:1.15rem;color:var(--tmuted);max-width:560px;margin-bottom:2.5rem">Passionné par l'<strong style="color:var(--vl)">infrastructure IT</strong> & la <strong style="color:var(--vl)">cybersécurité</strong>. Étudiant en BTS SIO SISR à SUP Chassagnes Campus La Favorite.</p>
+<div style="display:flex;gap:1rem">
+<a class="btn" href="#about"><i class="fa-solid fa-user"></i> À propos</a>
+<a class="btn" href="#contact" style="background:rgba(147,51,234,.08);color:var(--vl);border:1px solid var(--borderh)"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+</div>
+</section>
+<section id="about">
+<h2><span style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">À propos</span></h2>
+<div class="glass">
+<h3 style="color:#fff;margin-bottom:1.5rem"><i class="fa-solid fa-user" style="color:var(--vp)"></i> Bonjour, je suis Jahid</h3>
+<p style="color:var(--tmuted);margin-bottom:1.5rem">J'ai 21 ans et je suis actuellement étudiant en 2ème année de BTS SIO SISR à SUP Chassagnes Campus La Favorite à Lyon. Passionné par l'infrastructure IT et la cybersécurité, je développe mes compétences en administration système, sécurité réseau et infrastructure informatique.</p>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-top:1.5rem">
+<div style="background:rgba(147,51,234,.07);border:1px solid var(--border);border-radius:12px;padding:.9rem;text-align:center"><strong style="display:block;font-size:1.5rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">2</strong><span style="font-size:.72rem;color:var(--tmuted)">Ans d'études</span></div>
+<div style="background:rgba(147,51,234,.07);border:1px solid var(--border);border-radius:12px;padding:.9rem;text-align:center"><strong style="display:block;font-size:1.5rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">8</strong><span style="font-size:.72rem;color:var(--tmuted)">Docs réalisées</span></div>
+<div style="background:rgba(147,51,234,.07);border:1px solid var(--border);border-radius:12px;padding:.9rem;text-align:center"><strong style="display:block;font-size:1.5rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">10</strong><span style="font-size:.72rem;color:var(--tmuted)">Expériences</span></div>
+<div style="background:rgba(147,51,234,.07);border:1px solid var(--border);border-radius:12px;padding:.9rem;text-align:center"><strong style="display:block;font-size:1.5rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">3</strong><span style="font-size:.72rem;color:var(--tmuted)">Mois de stage</span></div>
+</div>
+</div>
+</section>
+<section id="skills">
+<h2><span style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Compétences</span></h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem">
+<div class="glass"><h4 style="color:var(--vp);margin-bottom:.5rem"><i class="fa-solid fa-network-wired"></i> Réseaux</h4><p style="color:var(--tmuted);font-size:.85rem">Cisco IOS, VLAN, TCP/IP, DNS, DHCP, Wireshark</p></div>
+<div class="glass"><h4 style="color:var(--vp);margin-bottom:.5rem"><i class="fa-solid fa-server"></i> Systèmes</h4><p style="color:var(--tmuted);font-size:.85rem">Windows Server, Active Directory, Linux Debian, Proxmox</p></div>
+<div class="glass"><h4 style="color:var(--vp);margin-bottom:.5rem"><i class="fa-solid fa-shield-halved"></i> Sécurité</h4><p style="color:var(--tmuted);font-size:.85rem">pfSense, VPN OpenVPN, Kali Linux, SSL/TLS</p></div>
+<div class="glass"><h4 style="color:var(--vp);margin-bottom:.5rem"><i class="fa-solid fa-terminal"></i> Scripting</h4><p style="color:var(--tmuted);font-size:.85rem">Bash, PowerShell, Python</p></div>
+<div class="glass"><h4 style="color:var(--vp);margin-bottom:.5rem"><i class="fa-solid fa-code"></i> Web</h4><p style="color:var(--tmuted);font-size:.85rem">Apache, Nginx, WordPress, HTML/CSS</p></div>
+<div class="glass"><h4 style="color:var(--vp);margin-bottom:.5rem"><i class="fa-solid fa-database"></i> Bases de données</h4><p style="color:var(--tmuted);font-size:.85rem">MySQL, phpMyAdmin</p></div>
+</div>
+</section>
+<section id="experience">
+<h2><span style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Expériences</span></h2>
+<div class="glass" style="margin-bottom:1.5rem">
+<h3 style="color:#fff;margin-bottom:.5rem">Stage Informatique - MaisonCourtieu</h3>
+<p style="color:var(--vl);font-size:.85rem;margin-bottom:1rem"><i class="fa-solid fa-calendar"></i> 2025-2026 • 6 semaines</p>
+<p style="color:var(--tmuted)">Déploiement, hébergement et mise en production d'un site web complet avec sécurisation de l'infrastructure.</p>
+<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem">
+<span style="background:rgba(147,51,234,.1);color:var(--vl);padding:.3rem .8rem;border-radius:5px;font-size:.75rem">Hébergement web</span>
+<span style="background:rgba(147,51,234,.1);color:var(--vl);padding:.3rem .8rem;border-radius:5px;font-size:.75rem">Déploiement</span>
+<span style="background:rgba(147,51,234,.1);color:var(--vl);padding:.3rem .8rem;border-radius:5px;font-size:.75rem">Sécurisation</span>
+</div>
+</div>
+<div class="glass">
+<h3 style="color:#fff;margin-bottom:.5rem">Projet AP Mbanque</h3>
+<p style="color:var(--vl);font-size:.85rem;margin-bottom:1rem"><i class="fa-solid fa-calendar"></i> 2024-2025 • SUP Chassagnes</p>
+<p style="color:var(--tmuted)">Mise en place d'une infrastructure web sécurisée : Apache, PHP, MySQL, HTTPS/SSL, WordPress.</p>
+<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem">
+<span style="background:rgba(147,51,234,.1);color:var(--vl);padding:.3rem .8rem;border-radius:5px;font-size:.75rem">Apache</span>
+<span style="background:rgba(147,51,234,.1);color:var(--vl);padding:.3rem .8rem;border-radius:5px;font-size:.75rem">MySQL</span>
+<span style="background:rgba(147,51,234,.1);color:var(--vl);padding:.3rem .8rem;border-radius:5px;font-size:.75rem">HTTPS/SSL</span>
+<span style="background:rgba(147,51,234,.1);color:var(--vl);padding:.3rem .8rem;border-radius:5px;font-size:.75rem">WordPress</span>
+</div>
+</div>
+</section>
+<section id="contact">
+<h2><span style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Contact</span></h2>
+<div class="glass">
+<h3 style="color:#fff;margin-bottom:1.5rem"><i class="fa-solid fa-envelope" style="color:var(--vp)"></i> Me contacter</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem">
+<div style="background:rgba(147,51,234,.06);border:1px solid var(--border);border-radius:12px;padding:1.2rem;display:flex;align-items:center;gap:1rem">
+<div style="width:40px;height:40px;border-radius:10px;background:var(--vg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--vp);flex-shrink:0"><i class="fa-solid fa-envelope"></i></div>
+<div><strong style="display:block;color:#fff;font-size:.9rem">Email</strong><span style="font-size:.8rem;color:var(--tmuted)">jahidjeffal69@gmail.com</span></div>
+</div>
+<div style="background:rgba(147,51,234,.06);border:1px solid var(--border);border-radius:12px;padding:1.2rem;display:flex;align-items:center;gap:1rem">
+<div style="width:40px;height:40px;border-radius:10px;background:var(--vg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--vp);flex-shrink:0"><i class="fa-solid fa-phone"></i></div>
+<div><strong style="display:block;color:#fff;font-size:.9rem">Téléphone</strong><span style="font-size:.8rem;color:var(--tmuted)">07 67 71 47 07</span></div>
+</div>
+<div style="background:rgba(147,51,234,.06);border:1px solid var(--border);border-radius:12px;padding:1.2rem;display:flex;align-items:center;gap:1rem">
+<div style="width:40px;height:40px;border-radius:10px;background:var(--vg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--vp);flex-shrink:0"><i class="fa-brands fa-linkedin"></i></div>
+<div><strong style="display:block;color:#fff;font-size:.9rem">LinkedIn</strong><span style="font-size:.8rem;color:var(--tmuted)">linkedin.com/in/jahid-djeffal</span></div>
+</div>
+<div style="background:rgba(147,51,234,.06);border:1px solid var(--border);border-radius:12px;padding:1.2rem;display:flex;align-items:center;gap:1rem">
+<div style="width:40px;height:40px;border-radius:10px;background:var(--vg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--vp);flex-shrink:0"><i class="fa-brands fa-github"></i></div>
+<div><strong style="display:block;color:#fff;font-size:.9rem">GitHub</strong><span style="font-size:.8rem;color:var(--tmuted)">github.com/Jaha698</span></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<p>&copy; 2026 Portfolio BTS SIO SISR - Jahid Djeffal</p>
+<p style="font-size:.78rem;margin-top:.3rem;opacity:.5">Conçu avec <i class="fa-solid fa-heart" style="color:#a855f7"></i> BTS SIO SISR - SUP Chassagnes Lyon</p>
+</footer>
 </body>
 </html>
