@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8"/>
@@ -453,29 +453,6 @@ body.loading{overflow:hidden}
   99%,100%{text-shadow:none;transform:none}
 }
 
-  
-  @media (max-width: 600px) {
-    main { padding: 0 1.4rem 4.5rem; }
-    nav { padding: 0 1rem; }
-    #l-progress-wrap { width: 220px; }
-    #gojo-mini {
-      left: -64px;
-      top: -28px;
-      width: 58px;
-      height: 58px;
-    }
-    #gojo-label-mini {
-      left: -70px;
-      top: 32px;
-      width: 70px;
-      font-size: 0.42rem;
-      letter-spacing: 1.1px;
-    }
-    .s-title { font-size: 1.55rem; }
-    .s-sub { font-size: 0.88rem; }
-    section { padding-top: 4.5rem; }
-  }
-
   /* ===== GOJO PIXEL ART — HOLLOW PURPLE ===== */
   #l-progress-wrap { overflow: visible !important; }
   #gojo-mini {
@@ -568,16 +545,59 @@ body.loading{overflow:hidden}
     left: var(--sx, 15%);
   }
 
+
+  /* ===== RESPONSIVE MOBILE ===== */
+  @media (max-width: 600px) {
+    main { padding: 0 1.2rem 4rem; }
+    nav  { padding: 0.75rem 1rem; flex-wrap: wrap; height: auto; }
+    nav ul { gap: 0.8rem; flex-wrap: wrap; font-size: 0.78rem; }
+
+    #home h1 { font-size: 2.6rem; letter-spacing: -1px; }
+    .h-sub   { font-size: 1rem; }
+    .h-btns  { flex-direction: column; gap: 0.7rem; }
+    .btn, .btn-o { font-size: 0.82rem; padding: 0.6rem 1.2rem; }
+
+    .s-title  { font-size: 1.45rem; }
+    .s-sub    { font-size: 0.85rem; }
+    section   { padding-top: 4rem; }
+
+    .about-wrap, .contact-wrap { grid-template-columns: 1fr !important; }
+    .info-cols { grid-template-columns: 1fr !important; }
+    .bts-grid  { grid-template-columns: 1fr !important; }
+    .sk-grid   { grid-template-columns: repeat(2, 1fr) !important; }
+    .docs-grid { grid-template-columns: 1fr !important; }
+    .bts-grid  { grid-template-columns: 1fr 1fr !important; }
+
+    .stats { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .about-wrap { gap: 1.5rem; }
+
+    footer { padding: 1.5rem 1.2rem; flex-direction: column; align-items: flex-start; }
+
+    /* Loader Gojo adapté mobile */
+    #l-progress-wrap { width: 200px !important; }
+    #gojo-mini       { left: -58px; top: -26px; width: 52px; height: 52px; }
+    #gojo-canvas     { width: 52px; height: 52px; }
+    #gojo-label-mini { left: -64px; top: 28px; width: 64px; font-size: 0.4rem; }
+
+    /* Chips hero */
+    .float-chip { display: none; }
+
+    /* Terminal block */
+    #terminal-lines { grid-template-columns: 1fr !important; gap: 0.3rem 0 !important; }
+  }
+
+  @media (max-width: 380px) {
+    #home h1 { font-size: 2rem; }
+    .s-title  { font-size: 1.25rem; }
+    .sk-grid  { grid-template-columns: 1fr !important; }
+  }
+
 </style>
 </head>
 <body>
 
-    <div id="loader-name">
-      <span class="l-char">J</span><span class="l-char">A</span><span class="l-char">H</span><span class="l-char">I</span><span class="l-char">D</span>
-      <span class="l-space"> </span>
-      <span class="l-char">D</span><span class="l-char">J</span><span class="l-char">E</span><span class="l-char">F</span><span class="l-char">F</span><span class="l-char">A</span><span class="l-char">L</span>
-    </div>
-    <div id="loader-sub">Portfolio · BTS SIO SISR</div>
+    
+    
     <div id="loader-bar-wrap"><div id="loader-bar"></div></div>
   </div>
 </div>
